@@ -1,17 +1,24 @@
 <template>
+  <Nav />
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TodoApp />
+  <Parent />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoApp from './components/TodoApp.vue';
+import Nav from './components/Nav.vue';
+import Parent from './components/Parent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TodoApp,
+    Nav,
+    Parent,
+  },
+};
 </script>
 
 <style>
