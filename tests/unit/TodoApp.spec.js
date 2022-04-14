@@ -31,3 +31,4 @@ describe("TodoApp.vue", () => {
     expect(wrapper.get('[data-test="todo"]').classes()).toContain("completed");
   });
 });
+
